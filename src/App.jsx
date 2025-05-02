@@ -6,10 +6,14 @@ import Home from './components/Home';
 const App = () => {
   return (
     <>
+    <Router>
       <Navbar />
-      <Home />
-    </>
-  )
+      <Routes>
+      <Route path='/' element= {<Home />} />
+      </Routes>
+      </Router>
+      </>
+  );
 }
 
 export default App
