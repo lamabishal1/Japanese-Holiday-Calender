@@ -7,7 +7,7 @@ const Home = () => {
 
     const [holidays,setHolidays] = useState([]);
     const [filteredMonth,setFilteredMonth] = useState("");
-    const [year, setYear] = useState("2025");
+    const [year] = useState("2025");
 
     const fetchHolidays = async () => {
         try {
